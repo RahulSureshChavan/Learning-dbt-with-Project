@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: source
-    database: my_first_dbt_dev
+    database: '{{ target.catalog }}'
     schema: source
     tables:
       - name: dim_customer
